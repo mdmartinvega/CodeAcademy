@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'Creepster';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/creepster/v9/AlZy_zVUqJz4yMrniH4Rcn35fh4Dog.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOUuhpKKSTjw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+
+* {
+    font-family: "open sans";
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #ff8000;
+    display: inline-flex;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    margin: 0;
+}
+header img {
+    width: 120px;
+    height: 80px;
+    text-align: left;
+    margin: 0px auto 10px 0px;
+}
+nav ul {
+    padding: 20px 55px;
+}
+nav ul li {
+    display: inline;
+    padding-right: 25px;
+    
+}
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    letter-spacing: 2px;
+    
+}
+
+li a:hover {
+    color: #fff;
+}
+.picture {
+    position: relative;
+    margin: 80px 0px 0px 0px;
+    width: 100%;
+    height: 650px;
+    background-image: url("/Users/lolimartin/Desktop/html/HOUSE STORE/RESOURCES/IMAGES/casa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.picture:before { /* Orange Overlay */
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 128, 0, 0.75);
+  
+  }
+  .picture * {
+    position: relative; /* Makes elements display above overlay. */
+  }
+.picture .both {
+    padding-top: 90px;
+    width: 70%;
+    margin-left: 220px;
+    
+
+}
+.both h1 {
+    text-align: center;
+    font-size: 100px;
+    width: 350px;
+    margin: auto;
+    font-family: creepster;
+    padding-bottom: 43px;
+    color: rgba(29, 16, 1, 0.75);
+
+}
+.both p {
+    text-align: center;
+    font-size: 28px;
+    width: 600px;
+    margin: auto;
+    color: #fff;
+}
+main {
+    width: 100%;
+    background-color: #fff;
+}
+main h1 {
+    color: rgba(248, 128, 8, 0.75);
+    text-align: center;
+    padding-top: 50px;
+    font-weight: normal;
+}
+main p {
+    width: 60%;
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+p span {
+    font-weight: bold;
+}
+.container {
+    width: 80%;
+    margin: 100px auto;
+}
+.variety {
+    display: flex;
+    margin-bottom: 100px;
+}
+.description {
+    width: 45%;
+}
+.description h3 {
+    font-size: 25px;
+}
+.description p {
+    margin-left: 0px;
+    font-size: 15px;
+    text-align: justify;
+    width: 450px;
+}
+.description img {
+    width: 450px;
+    height: 318px;
+    padding-top: 15px;
+}
+
+.swatches {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+.swatches h4 {
+    padding-bottom: 11px;
+
+}
+
+.colors {
+    display: flex;
+    flex-direction: row;   
+    margin-bottom: 5px;
+    
+    
+    
+}
+.color1,
+.color2,
+.color3,
+.color4,
+.color5 {
+    width: 110px;
+    height: 120px;
+    border: 10px solid rgb(193, 194, 196);
+}
+
+
+
+/*Rojos*/
+
+
+.red1 .color1 {
+    background-color: hsl(350, 100%, 80%);
+} 
+.red1 .color2 {
+    background-color: hsl(350, 100%, 65%);
+} 
+.red1 .color3 {
+    background-color: hsl(350, 100%, 50%);
+} 
+.red1 .color4 {
+    background-color: hsl(350, 100%, 35%);
+} 
+.red1 .color5 {
+    background-color: hsl(350, 100%, 20%);
+} 
+.red2 .color1 {
+    background-color: hsl(350, 100%, 50%);
+} 
+.red2 .color2 {
+    background-color: hsl(350, 85%, 50%);
+} 
+.red2 .color3 {
+    background-color: hsl(350, 70%, 50%);
+} 
+.red2 .color4 {
+    background-color: hsl(350, 55%, 50%);
+} 
+.red2 .color5 {
+    background-color: hsl(350, 40%, 50%);
+} 
+.red3 .color1 {
+    background-color: hsl(320, 100%, 50%);
+} 
+.red3 .color2 {
+    background-color: hsl(335, 100%, 50%);
+} 
+.red3 .color3 {
+    background-color: hsl(350, 100%, 50%);
+} 
+.red3 .color4 {
+    background-color: hsl(5, 100%, 50%);
+} 
+.red3 .color5 {
+    background-color: hsl(20, 100%, 50%);
+} 
+
+/*Verdes*/
+
+.green1 .color1 {
+    background-color: hsl(103, 100%, 90%);
+} 
+.green1 .color2 {
+    background-color: hsl(103, 100%, 70%);
+} 
+.green1 .color3 {
+    background-color: hsl(103, 100%, 50%);
+} 
+.green1 .color4 {
+    background-color: hsl(103, 100%, 30%);
+} 
+.green1 .color5 {
+    background-color: hsl(103, 100%, 10%);
+} 
+.green2 .color1 {
+    background-color: hsl(130, 100%, 50%);
+} 
+.green2 .color2 {
+    background-color: hsl(130, 80%, 50%);
+} 
+.green2 .color3 {
+    background-color: hsl(130, 60%, 50%);
+} 
+.green2 .color4 {
+    background-color: hsl(130, 40%, 50%);
+} 
+.green2 .color5 {
+    background-color: hsl(130, 20%, 50%);
+} 
+.green3 .color1 {
+    background-color: hsl(86, 100%, 50%);
+} 
+.green3 .color2 {
+    background-color: hsl(108, 100%, 50%);
+} 
+.green3 .color3 {
+    background-color: hsl(130, 100%, 50%);
+} 
+.green3 .color4 {
+    background-color: hsl(152, 100%, 50%);
+} 
+.green3 .color5 {
+    background-color: hsl(174, 100%, 50%);
+} 
+
+/*Azules*/
+
+.blue1 .color1 {
+    background-color: hsl(220, 100%, 90%);
+} 
+.blue1 .color2 {
+    background-color: hsl(220, 100%, 70%);
+} 
+.blue1 .color3 {
+    background-color: hsl(220, 100%, 50%);
+} 
+.blue1 .color4 {
+    background-color: hsl(220, 100%, 30%);
+} 
+.blue1 .color5 {
+    background-color: hsl(220, 100%, 10%);
+} 
+.blue2 .color1 {
+    background-color: hsl(220, 100%, 50%);
+} 
+.blue2 .color2 {
+    background-color: hsl(220, 80%, 50%);
+} 
+.blue2 .color3 {
+    background-color: hsl(220, 60%, 50%);
+} 
+.blue2 .color4 {
+    background-color: hsl(220, 40%, 50%);
+} 
+.blue2 .color5 {
+    background-color: hsl(220, 20%, 50%);
+} 
+.blue3 .color1 {
+    background-color: hsl(260, 100%, 50%);
+} 
+.blue3 .color2 {
+    background-color: hsl(240, 100%, 50%);
+} 
+.blue3 .color3 {
+    background-color: hsl(220, 100%, 50%);
+} 
+.blue3 .color4 {
+    background-color: hsl(200, 100%, 50%);
+} 
+.blue3 .color5 {
+    background-color: hsl(180, 100%, 50%);
+} 
+
+footer {
+    width: 100%;
+    height: 600px;
+    background-image: url("/Users/lolimartin/Desktop/html/HOUSE STORE/RESOURCES/IMAGES/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: block;
+    
+}
+footer:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 128, 0, 0.75);
+  
+  }
+footer * {
+    position: relative; 
+    color: #fff;
+  }
+  footer h2 {
+      text-align: center;
+      padding-top: 100px;
+      font-size: 40px;
+      font-weight: normal;
+  }
+  footer p {
+      text-align: center;
+      font-size: 25px;
+      width: 40%;
+      margin: auto;
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+  .buttom {
+      text-align: center;
+      margin-top: 80px;
+      background-color: #ff8000;
+      border: 1px solid #ff8000;
+      width: 250px;
+      margin: auto;
+      padding:25px;
+  }
+  .buttom a {
+      text-decoration: none;
+      font-size: 25px; 
+      
+  }
+  .buttom:hover {
+      background-color: #241607;
+  }
+ 
+
